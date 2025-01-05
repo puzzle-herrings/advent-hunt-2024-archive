@@ -1,0 +1,73 @@
+section.no-bottom-padding {
+    padding-bottom: 0;
+}
+
+#solution-and-stats {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+}
+
+#solution-and-stats p {
+    vertical-align: center;
+}
+
+#errata {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+}
+
+#canned-hints {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+}
+
+#answer-checker {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+}
+
+#guess-form-container>form>.field {
+    justify-content: center;
+}
+
+#guess-form-container>form>.field>.control:has(>input#id_guess) {
+    flex: 1;
+}
+
+.pseudorelative-outer {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.pseudorelative-inner {
+    position: absolute;
+    top: -0.75em;
+}
+
+#guesses-results>table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.nowrap {
+    white-space: nowrap;
+}
+
+.help-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 110vh;
+    gap: 2em;
+}
+
+.puzzle-pdf-frame {
+    width: 100%;
+    max-width: 110vh;
+    height: 100vh;
+}

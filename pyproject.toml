@@ -1,0 +1,28 @@
+[project]
+name = "advent-hunt-2024-archive"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cyclopts",
+    "httpx",
+    "loguru",
+    "quickhttp",
+    "ruff",
+    "tqdm",
+]
+
+[tool.ruff]
+line-length = 99
+
+[tool.ruff.lint]
+select = [
+    "E", # Pyflakes
+    "F", # Pycodestyle
+    "I", # isort
+]
+unfixable = ["F"]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
