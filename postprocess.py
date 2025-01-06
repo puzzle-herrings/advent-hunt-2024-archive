@@ -14,10 +14,10 @@ EXCLUDE_FILES = {
 }
 
 REGEX_SUBSTITUTIONS = (
-    (re.compile(r"(\.\./)+cdn\.jsdelivr\.net"), "/libraries/jsdelivr"),
-    (re.compile(r"(\.\./)+cdnjs\.cloudflare\.com"), "/libraries/cdnjs"),
-    (re.compile(r"(\.\./)+storage\.adventhunt\.com"), "/storage"),
+    (re.compile(r"https://cdn\.jsdelivr\.net"), "/libraries/jsdelivr"),
+    (re.compile(r"https://cdnjs\.cloudflare\.com"), "/libraries/cdnjs"),
     (re.compile(r"https://storage\.adventhunt\.com"), "/storage"),
+    (re.compile(r"https://www\.adventhunt\.com"), "https://2024.adventhunt.com"),
 )
 
 EXTERNAL_DIRECTORY_MAP = (

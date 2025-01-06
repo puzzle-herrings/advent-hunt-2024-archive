@@ -15,6 +15,9 @@ SCRAPED_DIR = Path(os.environ.get("SCRAPED_DIR"))
 def main(url: str):
     parsed_url = urlparse(url)
     out_path = SCRAPED_DIR / parsed_url.netloc / Path(parsed_url.path.removeprefix("/"))
+    if out_path.exists():
+        logger.info("File already exists: {}", out_path)
+        return
     logger.info(f"Downloading {url} to {out_path} ...")
     try:
         response = httpx.get(url)

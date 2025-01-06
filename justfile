@@ -25,16 +25,17 @@ scrape: clean-scrape
         '+https://cdn.jsdelivr.net/*' \
         '+https://cdnjs.cloudflare.com/*' \
         {{ if exclude_team_profiles == "false" { "" } else { "'-*/teams/*'" } }} \
-        -N '%h%p/%n.%t'
+        -N '%h%p/%n.%t' \
+        -K4 # keep original links
 
 scrape-no-teams:
     just exclude_team_profiles=true scrape
 
 download-missing:
-    grep 'https://storage.adventhunt.com\S*' scraped/www.adventhunt.com/ -r --include='*.html' -ho \
+    ggrep 'https://storage\.adventhunt\.com[^\s"\)]*' scraped/www.adventhunt.com/ -r --include='*.html' -P -ho \
         | sort -u \
         | SCRAPED_DIR={{ scraped_dir }} xargs -n 1 -P $(nproc) uv run download_missing.py
-    ggrep '(?<=["\s])/static/[^"\s]+(?=["\s])'  scraped/www.adventhunt.com/ -r -P -ho \
+    ggrep '(?<=["\s])/static/[^"\s]+(?=["\s])'  scraped/www.adventhunt.com/ -r --include='*.html' -P -ho \
         | sort -u \
         | SCRAPED_DIR={{ scraped_dir }} xargs -n 1 -P $(nproc) -I {} uv run download_missing.py "https://www.adventhunt.com{}"
 
