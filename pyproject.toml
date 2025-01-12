@@ -1,7 +1,7 @@
 [project]
 name = "advent-hunt-2024-archive"
 version = "0.1.0"
-description = "Add your description here"
+description = "Pipeline to mirror and archive the Advent Hunt 2024 website."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

@@ -1,0 +1,244 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Liberation Sans';
+    src: url("../fonts/liberationsans/LiberationSans-Regular-webfont.4acc215ddb39.woff") format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Liberation Sans';
+    font-weight: bold;
+    src: url("../fonts/liberationsans/LiberationSans-Bold-webfont.8eeed4cf0a70.woff") format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Liberation Sans';
+    font-style: italic;
+    src: url("../fonts/liberationsans/LiberationSans-Italic-webfont.6a4b8e8e0e65.woff") format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Liberation Sans';
+    font-weight: bold;
+    font-style: italic;
+    src: url("../fonts/liberationsans/LiberationSans-BoldItalic-webfont.15c35f2666a6.woff") format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/merienda/merienda-v19-latin-700.ee84f9cbcb97.woff2") format('woff2');
+}
+
+.navbar-brand {
+    font-family: "Merienda", "Brush Script MT", cursive;
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+.navbar-brand picture {
+    width: 1.75rem;
+    height: auto;
+}
+
+body {
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+}
+
+code,
+pre,
+tt,
+kbd,
+samp {
+    font-family: "Liberation Mono", monospace, monospace;
+}
+
+.merienda {
+    font-family: "Merienda", "Brush Script MT", cursive;
+}
+
+.mono {
+    font-family: "Liberation Mono", monospace, monospace;
+}
+
+/* Override Bulma colors */
+:root {
+
+    --red-h: 359deg;
+    --red-s: 47%;
+    --red-l: 51%;
+    --red-l-invert: 93%;
+    --red: hsl(var(--red-h), var(--red-s), var(--red-l));
+
+    --hunter-green-h: 132deg;
+    --hunter-green-s: 29%;
+    --hunter-green-l: 31%;
+    --hunter-green-l-invert: 93%;
+    --hunter-green: hsl(var(--hunter-green-h), var(--hunter-green-s), var(--hunter-green-l));
+
+    --green-h: 98deg;
+    --green-s: 32%;
+    --green-l: 45%;
+    --green-l-invert: 93%;
+    --green: hsl(var(--green-h), var(--green-s), var(--green-l));
+
+    --yellow-green-h: 78deg;
+    --yellow-green-s: 51%;
+    --yellow-green-l: 56%;
+    --yellow-green-l-invert: 7%;
+    --yellow-green: hsl(var(--yellow-green-h), var(--yellow-green-s), var(--yellow-green-l));
+
+    --parchment-h: 43deg;
+    --parchment-s: 57%;
+    --parchment-l: 88%;
+    --parchment-l-invert: 7%;
+    --parchment: hsl(var(--parchment-h), var(--parchment-s), var(--parchment-l));
+
+    --dark-green-h: 133deg;
+    --dark-green-s: 29%;
+    --dark-green-l: 16%;
+    --dark-green-l-invert: 5%;
+    --dark-green: hsl(var(--dark-green-h), var(--dark-green-s), var(--dark-green-l));
+
+    --white-h: 0deg;
+    --white-s: 0%;
+    --white-l: 93%;
+    --white-l-invert: 7%;
+    --white: hsl(var(--white-h), var(--white-s), var(--white-l));
+
+    --black-h: 0deg;
+    --black-s: 0%;
+    --black-l: 7%;
+    --black-l-invert: 93%;
+    --black: hsl(var(--black-h), var(--black-s), var(--black-l));
+
+    --gold: hsla(51, 100%, 50%, 1);
+    --rosy-brown: hsla(10, 47%, 72%, 1);
+    --teal: hsla(190, 47%, 36%, 1);
+
+    /* Bulma variables */
+    --bulma-body-background-color: var(--parchment);
+    --bulma-box-background-color: var(--white);
+    --bulma-card-background-color: var(--white);
+    --bulma-card-header-background-color: var(--white);
+    --bulma-card-content-background-color: var(--white);
+
+    --bulma-text-h: var(--dark-green-h);
+    --bulma-text-s: var(--dark-green-s);
+    --bulma-text-l: var(--dark-green-l);
+    --bulma-text-invert-l: var(--dark-green-l-invert);
+
+    --bulma-primary-h: var(--red-h);
+    --bulma-primary-s: var(--red-s);
+    --bulma-primary-l: var(--red-l);
+    --bulma-primary-invert-l: var(--red-l-invert);
+
+    --bulma-link-h: var(--hunter-green-h);
+    --bulma-link-s: var(--hunter-green-s);
+    --bulma-link-l: var(--hunter-green-l);
+    --bulma-link-invert-l: var(--hunter-green-l-invert);
+
+    --bulma-info-h: var(--green-h);
+    --bulma-info-s: var(--green-s);
+    --bulma-info-l: var(--green-l);
+    --bulma-info-invert-l: var(--green-l-invert);
+
+    --bulma-success-h: var(--yellow-green-h);
+    --bulma-success-s: var(--yellow-green-s);
+    --bulma-success-l: var(--yellow-green-l);
+    --bulma-success-invert-l: var(--yellow-green-l-invert);
+
+    --bulma-warning-h: var(--yellow-green-h);
+    --bulma-warning-s: var(--yellow-green-s);
+    --bulma-warning-l: var(--yellow-green-l);
+    --bulma-warning-invert-l: var(--yellow-green-l-invert);
+
+    --bulma-danger-h: var(--yellow-green-h);
+    --bulma-danger-s: var(--yellow-green-s);
+    --bulma-danger-l: var(--yellow-green-l);
+    --bulma-danger-invert-l: var(--yellow-green-l-invert);
+}
+
+.table {
+    --bulma-table-background-color: hsla(var(--parchment-h), var(--parchment-s), var(--parchment-l), 0);
+    --bulma-table-body-background-color: hsla(var(--parchment-h), var(--parchment-s), var(--parchment-l), 0);
+    --bulma-table-cell-background-color: hsla(var(--parchment-h), var(--parchment-s), var(--parchment-l), 0);
+    --bulma-table-striped-row-even-background-color: hsla(var(--parchment-h), var(--parchment-s), var(--parchment-l-invert), 0.035);
+}
+
+.content blockquote {
+    --bulma-content-blockquote-border-left: 5px solid var(--hunter-green);
+    --bulma-content-blockquote-background-color: var(--parchment);
+}
+
+/* Adapted from https://github.com/cityssm/bulma-sticky-table/blob/main/_sticky-table.scss */
+.table.has-sticky-header {
+    thead th {
+        background-color: var(--parchment);
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+}
+
+footer.footer {
+    --bulma-footer-background-color: var(--parchment);
+    --bulma-footer-padding: 3rem 1.5rem 1rem
+}
+
+.loading-indicator {
+    display: inline-block;
+    animation: spinner 3s linear infinite;
+    user-select: none;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.htmx-indicator {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.notification.announcement_message {
+    background-color: var(--rosy-brown);
+}
+
+.notification.announcement_message a:not(.button):not(.dropdown-item) {
+    color: var(--teal)
+}
+
+/* allauth form validation errors */
+
+.invalid-feedback {
+    display: flex;
+    color: var(--red);
+}
+
+.invalid-feedback:before {
+    font-family: bootstrap-icons;
+    content: "\F33B";
+    margin-right: 0.5em;
+    align-self: flex-center;
+}
+
+/* Spoiler tag */
+
+.spoiler {
+    background-color: var(--bulma-strong-color);
+}
+
+.spoiler:hover {
+    background-color: var(--parchment);
+}
+
+.spoiler.scheme-background:hover {
+    background-color: var(--bulma-scheme-main);
+}
