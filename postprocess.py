@@ -17,7 +17,7 @@ REGEX_SUBSTITUTIONS = (
     (re.compile(r"https://cdn\.jsdelivr\.net"), "/libraries/jsdelivr"),
     (re.compile(r"https://cdnjs\.cloudflare\.com"), "/libraries/cdnjs"),
     (re.compile(r"https://storage\.adventhunt\.com"), "/storage"),
-    (re.compile(r"https://www\.adventhunt\.com"), "https://2024.adventhunt.com"),
+    (re.compile(r"www\.adventhunt\.com"), "2024.adventhunt.com"),
 )
 
 EXTERNAL_DIRECTORY_MAP = (
